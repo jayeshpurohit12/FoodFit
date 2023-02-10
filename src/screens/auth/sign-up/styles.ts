@@ -1,0 +1,128 @@
+import { StyleSheet } from "react-native";
+import Colors from "../../../../constants/Colors";
+import { scale, verticalScale } from "../../../../constants/Layout";
+
+export const styles = StyleSheet.create({
+  container: { flex: 1 },
+  signUpTitle: {
+    marginLeft: scale(10),
+    marginTop: scale(10),
+    color: Colors.lightOrange,
+    fontSize: scale(20),
+    fontWeight: "bold",
+  },
+  newUserTitle: {
+    marginTop: scale(15),
+    marginLeft: scale(10),
+    color: Colors.grey,
+    fontSize: scale(14),
+    fontWeight: "500",
+  },
+  flagIcon: {
+    marginRight: scale(10),
+    borderRadius: scale(3)
+  },
+  countryCode: {
+    marginRight: scale(5),
+    fontWeight: "bold",
+    fontSize: scale(14),
+  },
+  textInput: {
+    marginHorizontal: scale(10),
+    marginTop: scale(10),
+    borderWidth: 1,
+    borderColor: Colors.grey4,
+    borderRadius: scale(10),
+    padding: scale(12),
+    paddingVertical: verticalScale(13),
+    marginBottom: scale(15),
+    width: "95%",
+  },
+  passwordInputContainer: {
+    borderRadius: scale(12),
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    alignContent: "center",
+  },
+  textInputContainer: {
+    borderWidth: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    borderColor: Colors.grey4,
+    borderRadius: scale(10),
+    padding: scale(12),
+    paddingVertical: verticalScale(10),
+    marginHorizontal: scale(10),
+    marginTop: scale(10),
+    marginBottom: scale(15),
+  },
+  emailIcon: { marginRight: scale(10) },
+  passwordContainer: {
+    borderWidth: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    borderColor: Colors.grey4,
+    borderRadius: scale(10),
+    padding: scale(12),
+    paddingVertical: verticalScale(10),
+    marginHorizontal: scale(10),
+    marginTop: scale(10),
+    marginBottom: scale(15),
+    justifyContent: "space-between",
+  },
+  passwordInput: { width: "80%" },
+  signUpButton: {
+    backgroundColor: Colors.lightOrange,
+    marginTop: scale(15),
+    paddingHorizontal: scale(20),
+    height: scale(50),
+    borderWidth: 1,
+    borderRadius: scale(12),
+    borderColor: Colors.lightOrange,
+    marginHorizontal: scale(10),
+  },
+  signUpButtonTitle: {
+    color: Colors.white,
+    fontSize: scale(18),
+    fontWeight: "bold",
+  },
+  loginBtnContainer: {
+    marginTop: scale(15),
+    alignItems: "flex-end",
+    marginHorizontal: scale(20),
+  },
+  loginAccButton: {
+    borderRadius: scale(12),
+    borderWidth: 1,
+    borderColor: Colors.lightOrange,
+    paddingHorizontal: scale(20),
+  },
+  loginAccountTitle: {
+    color: Colors.lightOrange,
+    fontWeight: "bold",
+    fontSize: scale(16),
+  },
+  termConditionText: {
+    alignSelf: "center",
+    color: Colors.grey,
+  },
+  termConditionContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  termCondition: { color: Colors.blueBerry },
+  orText: {
+    marginTop: scale(25),
+    fontSize: scale(16),
+    alignSelf: "center",
+    fontWeight: "bold",
+  },
+  alreadyAccountTitle: {
+    marginLeft: scale(10),
+    marginTop: scale(5),
+    fontSize: scale(15),
+    color: Colors.grey,
+  },
+});
